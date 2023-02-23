@@ -1,0 +1,50 @@
+$(document).ready(function() {
+    const image = document.getElementById('lazyload');
+
+    fetch("get-data.php")
+        .then((response) => {
+            if(!response.ok){ // Before parsing (i.e. decoding) the JSON data,
+                                // check for any errors.
+                // In case of an error, throw.
+                throw new Error("Something went wrong!");
+            }
+            return response.json(); // Parse the JSON data.
+        })
+        .then((data) => {
+                // This is where you handle what to do with the response.
+                var games = data;
+                alert(games.name);
+                document.getElementsByClassName
+                /*games.map(function(games) {
+                    let gallery = document.createElement('div');
+                    gallery.className = 'gallery';
+                    let cover = document.createElement('a');
+                    cover.className = 'cover';
+                    let image = document.createElement('img');
+                    let caption = document.createElement('div');
+                    caption.className = 'caption';
+                    let title = document.createElement('p');
+                    title.className = 'title';
+                    let genres = document.createElement('div');
+                    genres.className = 'genres';
+                    let genre = document.createElement('span');
+                    genre.className = 'genre';
+
+                    image.src = `${games.url}`;
+                    title.innerHTML = `${games.name}`;
+                    genre.innerHTML = `${games.genres}`;
+
+                    gallery.appendChild(cover);
+                    cover.appendChild(image);
+                    gallery.appendChild(caption);
+                    caption.appendChild(title);
+                    caption.appendChild(genres);
+                    genres.appendChild(genre);
+                    rec.appendChild(gallery);
+                });*/     
+        })
+        .catch((error) => {
+                // This is where you handle errors.
+    });
+    /*content.appendChild(rec);*/
+});

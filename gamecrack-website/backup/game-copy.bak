@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+/*.bg-img {
+    position: absolute;
+    background: url(../img/ghost.jpg);
+    background-size: cover;
+    z-index: -1;
+    height: 20%; width: 20%;
+    transform: scale(5);
+    transform-origin: top left;
+    filter: blur(2px);
+}*/
+
+.bg-img::before {
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+    url(../img/ac.jpg);
+    position: fixed;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    margin: -10px;
+    z-index: -1;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #0a0c1b;
+}
+
+.navbar-left .logo img {
+    width: 30px;
+}
+
+.navbar-left, .searchbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > * {
+    padding: 5px 10px;
+}
+
+.searchbar {
+    width: 25%;
+}
+
+.searchbar input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 .1em 0 1em;
+}
+
+.searchbar .icon {
+    height: 40px;
+    width: 45px;
+    background-color: red;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* CONTENT */
+
+.row-one {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* SLIDER */
+
+.slider {
+    width: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* manual navigation of image slider */
+
+.manual-nav {
+    position: absolute;
+    width: 700px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/* automatic navigation of image slider */
+
+.auto-nav {
+    position: absolute;
+    width: 700px;
+    margin-top: 333px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.auto-nav div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#radio1:checked ~ .auto-nav .auto-btn1 {
+    background: #fff;
+}
+
+#radio2:checked ~ .auto-nav .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~ .auto-nav .auto-btn3 {
+    background: #fff;
+}
+
+#radio4:checked ~ .auto-nav .auto-btn4 {
+    background: #fff;
+}
+
+/* game info */
+
+.game-info {
+    width: 50%;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.content {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.game-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+#companies, #genres {
+    max-width: 100%;
+    display: flex;
+    align-items: center;;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.companies, .genres {
+    font-size: 13px ;
+    padding: 10px 15px;
+    background-color: #000;
+    border-radius: 40px;
+}
+
+.desc {
+    margin: 0;
+    text-align: justify;
+}
+
+.website {
+    text-decoration: none;
+    color: #fff;
+}
+
+.website p {
+    display: inline;
+}
+
+/* support, crack, reviews */
+
+.row-two {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.row-two > * {
+    flex: 1;
+}
+
+.col {
+    padding: 30px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.col h3 {
+    margin: 0;
+    display: inline;
+}
+
+.col .title {
+    text-align: center;
+}
+
+.col .stores {
+    text-align: center;
+}
+

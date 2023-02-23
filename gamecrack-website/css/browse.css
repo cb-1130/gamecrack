@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    background-color: #0d0d0d;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #0a0c1b;
+}
+
+.navbar-left .logo {
+    width: 40px;
+}
+
+.navbar-left .logo img {
+    width: 30px;
+    display: block;
+    margin: auto;
+}
+
+.navbar-left, .searchbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > * {
+    padding: 5px 10px;
+}
+
+.searchbar {
+    width: 25%;
+}
+
+.searchbar input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 .1em 0 1em;
+}
+
+.search {
+    height: 40px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #f00;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+/* CONTENT */
+
+.content {
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.title {
+    margin: 0 75px;
+}
+
+.title h2 {
+    font-size: 40px;
+    color: #d9d9d9;
+    text-transform: uppercase;
+}
+
+/* genres */
+
+.genre-container {
+    margin: 0 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.genre {
+    width: 240px;
+    height: 407px;
+    text-decoration: none;
+    color: #d9d9d9;
+    border-radius: 10px;
+}
+
+.tile-content {
+    margin: 0 auto;
+    padding: 200px 0 24px 0;
+    width: 190px;   
+}
+
+.tile-title {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tile-desc {
+    font-size: 10px;
+}
+
+.point-and-click {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/point-and-click.png);
+}
+
+.fighting {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/fighting.jpg);
+}
+
+.shooter {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/shooter.jpg);
+}
+
+.music {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/music.png);
+}
+
+.platform {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/platform.jpg);
+}
+
+.puzzle {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/puzzle.jpg);
+}
+
+.racing {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/racing.jpg);
+}
+
+.real-time-strategy-rts {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/real-time-strategy-rts.jpg);
+}
+
+.role-playing-rpg {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/role-playing-rpg.jpg);
+}
+
+.simulator {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/simulator.jpg);
+}
+
+.sport{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/sport.jpg);
+}
+
+.strategy{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/strategy.jpg);
+}
+
+.turn-based-strategy-tbs{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/turn-based-strategy-tbs.jpg);
+}
+
+.tactical{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/tactical.jpg);
+}
+
+.hack-and-slash-beat-em-up{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/hack-and-slash-beat-em-up.jpg);
+}
+
+.quiz-trivia{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/quiz-trivia.jpg);
+}
+
+.pinball{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/pinball.jpg);
+}
+
+.adventure{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/adventure.jpg);
+}
+
+.indie{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/indie.jpg);
+}
+
+.arcade{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/arcade.jpg);
+}
+
+.visual-novel{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/visual-novel.jpg);
+}
+
+.card-and-board-game{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/card-and-board-game.jpg);
+}
+
+.moba{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(21, 19, 19) 55%), url(../img/moba.jpg);
+}
+
+.genre {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* themes */
+
+.theme-container {
+    padding: 0 75px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.theme {
+    padding: 10px;
+    text-decoration: none;
+    color: #d9d9d9;
+    background: rgb(21, 19, 19);
+}
+
+.theme .theme-btn {
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,32 @@
+<?php
+    include_once('conn.php');
+
+    //get page no.
+    if (isset($_GET['page_no']) && $_GET['page_no'] !== "") {
+        $page_no = $_GET['page_no'];
+    } else {
+        $page_no = 1;
+    }
+
+    //rows per page
+    $rec_per_page = 25;
+    //page offset with LIMIT query
+    $offset = ($page_no - 1) * $rec_per_page;
+
+    $sql = "SELECT ga.id, ga.name, ga.slug, c.url, GROUP_CONCAT(DISTINCT(ge.name)) AS genres
+    FROM game ga JOIN game_genre gg
+    ON ga.id = gg.game_id
+    JOIN genres ge
+    ON ge.id = gg.genre_id
+    JOIN covers c
+    ON ga.id = c.game_id
+    GROUP BY ga.id
+    LIMIT $offset, $rec_per_page";
+
+    $res = $con->query($sql) or die(mysqli_error($con));
+    
+    while ($row = mysqli_fetch_assoc($res)) {
+        echo json_encode($row);
+    } mysqli_close($con);
+?>
+

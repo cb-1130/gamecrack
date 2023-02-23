@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+#bg-img::before {
+    content: "";
+    position: fixed;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    margin: -10px;
+    z-index: -1;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #0a0c1b;
+}
+
+.navbar-left .logo {
+    width: 40px;
+}
+
+.navbar-left .logo img {
+    width: 30px;
+    display: block;
+    margin: auto;
+}
+
+.navbar-left, .searchbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > * {
+    padding: 5px 10px;
+}
+
+.searchbar {
+    width: 25%;
+}
+
+.searchbar input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 .1em 0 1em;
+}
+
+.search {
+    height: 40px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #f00;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+/* CONTENT */
+
+.row-one {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* slider */
+
+.slide-container {
+    overflow: hidden;
+    width: 410px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: #d9d9d9;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #d9d9d9;
+}
+
+/* game info */
+
+.game-info {
+    width: 845px;
+    height: fit-content;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    color: #d9d9d9;
+}
+
+.content {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.game-title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+#companies, #genres {
+    max-width: 100%;
+    display: flex;
+    align-items: center;;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.companies, .genres {
+    font-size: 13px ;
+    padding: 10px 15px;
+    background-color: #000;
+    border-radius: 40px;
+}
+
+.desc {
+    margin: 0;
+    text-align: justify;
+}
+
+.website {
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.website p {
+    display: inline;
+}
+
+/* support, crack, reviews */
+
+.row-two {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.row-two > * {
+    flex: 1;
+}
+
+.col {
+    padding: 30px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: fit-content;
+}
+
+.col .title h3 {
+    margin: 0;
+    display: inline;
+}
+
+.col .title {
+    text-align: center;
+}
+
+.col .stores {
+    text-align: center;
+}
+
+/* support */
+
+.stores ul {
+    margin: 0;
+    list-style: none;
+}
+
+.stores ul li {
+    padding: 5px;
+    float: left;
+}
+
+.stores ul li span{
+    padding-right: 10px;
+    height: 100%;
+    display: inline-block;
+    background: #000;
+    color: #d9d9d9;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.stores span img {
+    width: 40px;
+    vertical-align: middle;
+    background: #d9d9d9;
+    border-radius: 10px 0 0 10px;
+    margin-right: 10px;
+}
+
+/* crack */
+
+.crack-status {
+    display: flex;
+}
+
+.crack-status > * {
+    flex: 1;
+}
+
+.crack-status p {
+    margin: 0;
+    text-align: center;
+    line-height: 34px;
+}
+
+#cracked, #uncracked {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+#cracked {
+    color: #84DE02;
+}
+
+#uncracked {
+    color: #AF002A;
+}
+
+.active {
+    display: inline;
+}
+
+.disabled {
+    display: none;
+}
+
+
+/* reviews */
+
+.review {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box .percent {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.box .percent svg {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.box .percent svg circle {
+    width: 80px;
+    height: 80px;
+    fill: none;
+    stroke-width: 5;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+}
+
+.box .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+
+.box .percent svg circle:nth-child(2) {
+    stroke: #03a9f4;
+}
+
+.box .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+
+.box .percent .number h2 {
+    font-size: 15px;
+    color: #d9d9d9;
+}
+
+.box .text {
+    margin: 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+
+

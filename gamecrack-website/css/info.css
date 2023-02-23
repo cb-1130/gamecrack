@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    background-color: #0d0d0d;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #0a0c1b;
+}
+
+.navbar-left .logo {
+    width: 40px;
+}
+
+.navbar-left .logo img {
+    width: 30px;
+    display: block;
+    margin: auto;
+}
+
+.navbar-left, .searchbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > * {
+    padding: 5px 10px;
+}
+
+.searchbar {
+    width: 25%;
+}
+
+.searchbar input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0 .1em 0 1em;
+}
+
+.search {
+    height: 40px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #f00;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+/* CONTENT */
+
+#info-container {
+    padding: 10px 40px 20px;
+    text-align: left;
+    color: #d9d9d9;
+}
+
+.container {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    display: block;
+    clear: both;
+}
+
+#info-container section:not(:last-of-type) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+#info-container a {
+    color: #ed2553;
+    text-decoration: none;
+}
+
+#info-container #thanks {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.color-icon {
+    color: #ed2553;
+}
